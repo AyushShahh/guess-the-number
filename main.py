@@ -7,9 +7,9 @@ number = random.randint(1, 100)
 
 print('\nWell %s... I am thinking of a number between 1 and 100\n' % name)
 print('I want you to guess the number.')
-print('You have 10 guesses.\n')
+print('You have 8 guesses.\n')
 
-while guesses_made < 11:
+while guesses_made < 9:
     guess = int(input('Make a guess: '))
     guesses_made += 1
 
@@ -23,6 +23,6 @@ while guesses_made < 11:
         break
 
 if guess == number:
-    print('Great job %s, You guessed my number in %d guesses.' % (name, guesses_made))
+    print('Great job %s! You guessed my number in %d guesses.' % (name, guesses_made))
 else:
-    print('Nope, the number I was thinking was %d.' % number)
+    print('You ran out of your guesses. The number I was thinking was %d.' % number)
